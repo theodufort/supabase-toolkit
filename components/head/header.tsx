@@ -5,7 +5,6 @@ import { useRouter, usePathname } from "next/navigation";
 
 import { createClient } from "@/utils/supabase/client";
 import { User } from "@supabase/supabase-js";
-import { appConfig } from "@/boilerplate-config";
 import ThemeSwitcher from "@/components/general/theme-switcher";
 
 // Create a single Supabase client instance outside the component
@@ -90,7 +89,7 @@ export default function Header() {
     return (
       <header className="w-full p-4 flex justify-between items-center border-b">
         <div className="text-xl font-bold">
-          <a href="/">{appConfig.app.name}</a>
+          <a href="/">Supabase Toolkit</a>
         </div>
         <nav className="flex gap-4">
           <div className="animate-pulse bg-gray-200 dark:bg-gray-700 h-8 w-16 rounded"></div>
@@ -103,7 +102,7 @@ export default function Header() {
   return (
     <header className="w-full p-4 flex justify-between items-center border-b">
       <div className="text-xl font-bold">
-        <a href="/">{appConfig.app.name}</a>
+        <a href="/">Supabase Toolkit</a>
       </div>
       <nav className="flex gap-4 items-center">
         <ThemeSwitcher />

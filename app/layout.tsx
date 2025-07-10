@@ -4,7 +4,6 @@ import "./globals.css";
 import Toaster from "@/components/general/toaster";
 import Header from "@/components/head/header";
 import { ThemeProvider } from "next-themes";
-import { appConfig } from "@/boilerplate-config";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: appConfig.app.name,
-  description: appConfig.app.description,
+  title: "Supabase Toolkit",
+  description: "A collection of tools for Supabase users and their projects",
 };
 
 export default function RootLayout({
