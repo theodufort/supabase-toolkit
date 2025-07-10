@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --border: #e5e7eb;
+  --hover: #f2f2f2;
+  --button-bg: var(--background);
+  --button-fg: var(--foreground);
+  --button-border: var(--border);
+  --dropdown-bg: #fff;
+  --dropdown-fg: var(--foreground);
+  --dropdown-hover: #f2f2f2;
+  --dropdown-selected: #e5e7eb;
+  --icon-color: var(--foreground);
+  --success: #22c55e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --border: #333;
+  --hover: #232323;
+  --button-bg: #1a1a1a;
+  --button-fg: var(--foreground);
+  --button-border: var(--border);
+  --dropdown-bg: #23272b;
+  --dropdown-fg: var(--foreground);
+  --dropdown-hover: #1a1a1a;
+  --dropdown-selected: #232323;
+  --icon-color: var(--foreground);
+  --success: #16a34a;
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
